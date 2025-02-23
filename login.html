@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <a href="sahifa.html">Bosh sahiha</a>
+    <form action="/server.py" method="get">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username"><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br><br>
+        <label for="email">Emailingiz</label>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="sana">Tug'ilgan sana</label>
+        <input type="date" name="data" id="sana"><br><br>
+        <label for="student">Talabamisiz</label>
+        <input type="checkbox" name="student" id="student"><br><br>
+        <hr>
+        <label for="erkak">Erkak</label>
+        <input type="radio" name="gender" value="male">
+        <label for="ayol">Ayol</label>
+        <input type="radio" name="gender" value="female"><br><br>
+        <label for="passport">Passport</label>
+        <input type="file" name="passport" id="passport"><br><br>
+        <label for="tajriba">Tajribangiz</label>
+        <select name="experence" id="tajriba">
+            <option value="0">Tajribam yo'q</option>
+            <option value="1">1 yildan kam</option>
+            <option value="2">1 yildan ko'p</option>
+        </select><br><br>
+        <label for="malumot">Siz haqingizda</label><br>
+        <textarea name="about" id="malumot" rows="5" cols="10"></textarea><br><br>
+        <button type="submit">Register</button>
+    </form>
+    <a href="layout_semantic.html">keyingi sahifa </a>
+</body>
+</html>

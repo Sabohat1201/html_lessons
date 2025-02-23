@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sabohat Qayumova">
+    <link rel="icon" type="image/webp" href="Rasmlar/logo.webp">
+    
+    <title>Layout va semantic</title>
+    <style>
+        .box{
+            background-color: rgb(0, 170, 255);
+            color: white;
+            font-size: 25px;
+        }
+        header{
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        nav{
+            margin-top: 1px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        section{
+            height: 500px;
+            line-height: 500px;
+            margin-top: 1px;
+            width: 70%;
+            float: left;
+        }
+        aside{
+            height: 500px;
+            line-height: 500px;
+            margin-top: 1px;
+            width: 30%;
+            float: left;
+        }
+        footer{
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+            margin-top: 1px;
+            width: 100%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <header class="box">
+        Header
+    </header>
+    <nav class="box">
+        Nav
+    </nav>
+    <div>
+        <section class="box">
+            <video width="640" height="360" controls>
+                <source src="./sabohat.mp4" type="video/mp4">
+                Sizning brauzeringiz videoni o'qiy olmaydi.
+            </video>
+        </section>
+    </div>
+    <div>
+        <aside class="box">
+            <audio controls>
+                <source src="./bilaman.mp3" type="audio/mp3">
+                Sizning brauzeringiz audioni o'qiy olmaydi.
+            </audio>
+        </aside>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zvFS2QyfQYA?si=J1FT1ZvYk4J4hdUD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div>
+        <footer class="box">
+            Footer
+        </footer>
+    </div>
+</body>
+</html>
